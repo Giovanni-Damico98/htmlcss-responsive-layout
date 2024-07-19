@@ -1,0 +1,151 @@
+/* Media query per schermi con larghezza minima di 768px */
+@media screen and (min-width: 768px) {
+
+    /* Allinea il contenuto dell'header a sinistra e aggiunge margine a sinistra */
+    .header-div {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    /* Aggiunge padding al contenitore principale */
+    .container {
+        padding: 50px;
+    }
+
+    /* Aumenta la dimensione del font dell'h2 nella sezione delle valutazioni */
+    .recipe-rate-left h2 {
+        font-size: 30px;
+    }
+
+    /* Modifica il raggio di curvatura dei bordi dei pulsanti rotondi */
+    .round-button {
+        border-radius: 30%;
+    }
+
+    /* Imposta la larghezza dei pulsanti social */
+    .social-button button {
+        flex-basis: 20%;
+    }
+
+    /* Mostra gli annunci */
+    .ads {
+        display: contents;
+    }
+
+    /* Modifica la larghezza delle liste e la dimensione del font */
+    .list-div li {
+        flex-basis: calc(100% / 3);
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    /* Mostra le liste come elementi flex con wrapping */
+    .fa-ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Imposta l'altezza del video della ricetta */
+    .video-recipe {
+        height: 350px;
+    }
+
+    /* Modifica la larghezza del separatore */
+    .separator {
+        width: 9%;
+    }
+
+    /* Aggiunge margine all'immagine flottante */
+    .float-left {
+        margin: 0px 20px 0px 0px;
+    }
+
+    /* Centra il contenuto del footer */
+    .footer-content {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/* Media query per schermi con larghezza minima di 426px */
+@media screen and (min-width: 426px) {
+
+    /* Aggiunge margine all'immagine nella sezione del tiramisù */
+    .tiramisu-content img {
+        margin: 0px 20px 0px 0px;
+    }
+}
+
+/* Media query per schermi con larghezza massima di 426px */
+@media screen and (max-width: 426px) {
+
+    /* Modifica le proprietà dell'immagine flottante */
+    .float-left {
+        float: none;
+        width: 70%;
+        margin: 0;
+    }
+
+    /* Dispone il testo della sezione del tiramisù in colonna */
+    .tiramisu-content p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Centra l'immagine nella sezione del tiramisù */
+    .tiramisu-content img {
+        align-self: center;
+    }
+
+    /* Nasconde l'estensione dell'h2 */
+    .h2-extencion {
+        display: none;
+    }
+
+    /* Visualizza gli elementi strong come contenuti */
+    strong {
+        display: contents;
+    }
+}
+
+/* Media query per schermi con larghezza minima di 992px */
+@media screen and (min-width: 992px) {
+
+    /* Aumenta la dimensione del font dell'h2 nella sezione delle valutazioni */
+    .recipe-rate-left h2 {
+        font-size: 45px;
+    }
+
+    /* Dispone la ricetta come elemento flex */
+    .recipe-card {
+        display: flex;
+    }
+
+    /* Imposta l'altezza del video della ricetta e la larghezza della base */
+    .video-recipe {
+        height: 350px;
+        flex-basis: 70%;
+    }
+
+    /* Imposta la larghezza della base delle informazioni della card */
+    .card-info {
+        flex-basis: 30%;
+    }
+
+    /* Mostra le liste come block */
+    .fa-ul {
+        display: block;
+    }
+
+    /* Dispone il contenuto del footer con spazio tra gli elementi */
+    .footer-content {
+        top: 12px;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+}
